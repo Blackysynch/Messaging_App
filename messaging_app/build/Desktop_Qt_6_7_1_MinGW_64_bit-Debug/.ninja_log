@@ -1,9 +1,0 @@
-# ninja log v5
-2	976	7394800679825153	messaging_app_autogen/timestamp	69322ebfc2552558
-2	976	7394800679825153	messaging_app_autogen/mocs_compilation.cpp	69322ebfc2552558
-2	976	7394800679825153	C:/Users/AFC/OneDrive/Documents/GitHub/Messaging_app/messaging_app/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/messaging_app_autogen/timestamp	69322ebfc2552558
-2	976	7394800679825153	C:/Users/AFC/OneDrive/Documents/GitHub/Messaging_app/messaging_app/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/messaging_app_autogen/mocs_compilation.cpp	69322ebfc2552558
-977	3753	7394800708449974	CMakeFiles/messaging_app.dir/messaging_app_autogen/mocs_compilation.cpp.obj	1d56bbc13c66e89e
-985	3770	7394800708629493	CMakeFiles/messaging_app.dir/main.cpp.obj	2d18c96cfef0ae47
-981	3822	7394800709148093	CMakeFiles/messaging_app.dir/mainwindow.cpp.obj	cac5916b44c50811
-3822	4146	7394800712331390	messaging_app.exe	f469a95a3a699244
