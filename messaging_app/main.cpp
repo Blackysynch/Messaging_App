@@ -20,9 +20,11 @@ int main(int argc, char *argv[])
     MainWindow w;
     w.show();
 
+
+
+
     QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
-    //db.setConnectOptions("QSQLITE_OPEN_READWRITE");
-    db.setDatabaseName("UsersDB.db");
+    db.setDatabaseName("User.db");
     if (!db.open()) {
         std::cout << "Error connecting to database: " << db.lastError().text().toStdString() << std::endl;
         //return 1;
@@ -31,10 +33,10 @@ int main(int argc, char *argv[])
     QSqlQuery query(db);
     // Example: Create a table
     // Replace "your_table_name" with the actual table
-    //if (!query.exec("CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, username TEXT, email TEXT, acc_id TEXT, password TEXT)")) {
-        //std::cerr << "Error creating table: " << query.lastError().text().toStdString() << std::endl;
+    if (!query.exec("CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, username TEXT, email TEXT, acc_id TEXT, password TEXT)")) {
+        std::cerr << "Error creating table: " << query.lastError().text().toStdString() << std::endl;
         //return 1;
-    //}
+    }
     // Example: Insert data into the table
     // Replace "your_values" with the actual values you want to insert
     if (!query.exec("INSERT INTO users (username, email) VALUES ('John', 'john@email.com')")) {
@@ -59,4 +61,7 @@ int main(int argc, char *argv[])
 
 
     return a.exec();
+
+
+
 }
