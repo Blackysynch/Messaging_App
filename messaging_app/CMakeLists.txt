@@ -23,6 +23,13 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(messaging_app
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        user.h user.cpp
+        account.h account.cpp
+        message.h message.cpp
+        chat.h chat.cpp
+        groupchat.h groupchat.cpp
+        ../../../Messaging_app/Messaging_app_exported.qrc
+        databasemanager.cpp databasemanager.h
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET messaging_app APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

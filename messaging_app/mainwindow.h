@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+#include <QtSql/QSqlDatabase>
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -16,6 +18,13 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
+private slots:
+    void on_proceed_btn_clicked();
+
+    void on_signup_btn_clicked();
+
+    void on_login_btn_clicked();
 
 private:
     Ui::MainWindow *ui;
